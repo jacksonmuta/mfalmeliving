@@ -1,0 +1,7 @@
+{
+  "name": "mfalme-living",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
