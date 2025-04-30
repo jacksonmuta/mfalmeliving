@@ -1,27 +1,92 @@
-#container {
+.intro-container {
+  position: relative;
   text-align: center;
-
+}
+.intro-image {
+  width: 100%;
+  height: auto; // Let the image scale proportionally
+  border-radius: 10px;
+  object-fit: cover; // optional: keeps image filled neatly if height is fixed later
+}
+.title{
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 20px;
+  left: 5%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap; /* ✅ allow wrapping on smaller screens */
+  justify-content: center;
+  gap: 10px;
+ 
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.navbar {
+  position: absolute;
+  top: 20px;
+  left: 78%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-wrap: wrap; /* ✅ allow wrapping on smaller screens */
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 14px;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
+.navbar a {
   text-decoration: none;
+  color: #333;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+
+.contentdiv {
+  width: 70%;
+  margin: 0 auto; /* This centers the div horizontally */
+}
+hr {
+  border: none;
+  height: 2px;
+  background-color: #ccc; /* change to your desired color */
+  width: 100%;
+  margin: 20px 0;
+}
+.h4{
+  margin-left: 50px;
+}
+.footer{
+  background-color:black;
+
+}
+.aboutus{
+  color: antiquewhite;
+}
+ion-grid {
+  padding: 0 10px;
+
+  ion-row {
+    // vertical spacing between rows
+    margin-bottom: 10px;
+
+    ion-col {
+      // horizontal spacing between columns
+      padding: 20px;
+
+      ion-card {
+        height: 100%;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+    }
+  }
+}
+.socials{
+  margin-bottom: 10px;
 }
